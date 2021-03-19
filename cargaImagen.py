@@ -6,6 +6,8 @@ IRGB = cv2.imread('004.jpg')
 print(IRGB)
 print(IRGB.shape)
 
-#Imprimiendo el tamaño de la imagen como matriz
-print('Modificación en la rama main')
-print(len(IRGB))
+#Imagen en escala de grises
+print('Líneas agregadas en rama2')
+IGS = cv2.cvtColor(IRGB, cv2.COLOR_BGR2GRAY)
+print(IGS)
+print(IGS.shape)
